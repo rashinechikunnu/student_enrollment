@@ -24,10 +24,10 @@ def log_in(request):
             login(request,user_click)
         
             if user_click.is_staff:
-                return redirect('home')
+                return redirect('admin_home')
             
             elif user_click.is_student:
-                return redirect('home')
+                return redirect('list_studnet')
             
        
         else:

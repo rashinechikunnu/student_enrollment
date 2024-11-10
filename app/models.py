@@ -12,7 +12,7 @@ class student_data(models.Model):
     user = models.ForeignKey(Login,on_delete= models.CASCADE)
     first_name = models.CharField(max_length=100)
     last_name= models.CharField(max_length=10)
-    date_of_birth=models.DateField(auto_now_add=True)
+    date_of_birth=models.CharField(max_length=10)
     GENDER_CHOICES = (
         (1, 'Male'),
         (2, 'Female'),

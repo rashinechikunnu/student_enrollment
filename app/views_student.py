@@ -1,9 +1,6 @@
 from django.shortcuts import render,redirect
 from .forms import studentForms,LoginForms
-# from .models import product,add_to_cart,Customer,payment_product,Feedback
-# from django.contrib.auth import logout
-# from django.contrib import messages
-# from django.contrib.auth.decorators import login_required
+
 
 
 # student account creation
@@ -25,6 +22,11 @@ def student_account_creation(request):
             user1.user=a
             user1.save()
         
-            return redirect('home')
+            return redirect('list_studnet')
         
     return render(request,"student/register.html",{'l_form':l_form,'s_form':s_form})
+
+
+# list
+def view_data(request):
+    return render(request,'student/list.html')
