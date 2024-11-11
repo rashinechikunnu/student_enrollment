@@ -1,5 +1,5 @@
 from django import forms
-from .models import student_data,Login
+from .models import student_data,Login,Class_room,Subject
 from django.contrib.auth.forms import UserCreationForm
 
 
@@ -20,3 +20,18 @@ class studentForms(forms.ModelForm):
         model = student_data
         fields ="__all__"
         exclude = ("user",)
+
+
+class class_room_Forms(forms.ModelForm):
+    
+    class Meta:
+        model = Class_room
+        fields ="__all__"
+       
+
+class subject_Forms(forms.ModelForm):
+    
+    class Meta:
+        model = Subject
+        fields ="__all__"
+       

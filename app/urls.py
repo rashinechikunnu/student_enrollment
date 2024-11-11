@@ -14,6 +14,10 @@ urlpatterns = [
     path('admin_home',views_admin.admin_home,name='admin_home'),
     # all studnet table
     path('std_table',views_admin.std_views,name="std_table"),
+    # class room list
+    path('class_rooms',views_admin.class_rooms,name='class_rooms'),
+    # class room create
+    path('crate_class_room',views_admin.create_class_room,name='class_create_room'),
 
 
     # student page

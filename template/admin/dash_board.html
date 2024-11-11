@@ -32,25 +32,25 @@
           <li class="nav-item">
             <a class="nav-link" href="{% url 'std_table' %}">
               <i class="mdi mdi-contacts menu-icon"></i>
-              <span class="menu-title">Students Table</span>
+              <span class="menu-title">Students data</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href=" {% static 'pages/forms/basic_elements.html' %} ">
+            <a class="nav-link" href="{% url "class_rooms" %}">
               <i class="mdi mdi-format-list-bulleted menu-icon"></i>
-              <span class="menu-title">Forms</span>
+              <span class="menu-title">class room</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href=" {% static 'pages/charts/chartjs.html' %} ">
+            <a class="nav-link" href="{% url "class_create_room" %}">
               <i class="mdi mdi-chart-bar menu-icon"></i>
-              <span class="menu-title">Charts</span>
+              <span class="menu-title">Create class room</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href=" {% static 'pages/tables/basic-table.html' %} ">
               <i class="mdi mdi-table-large menu-icon"></i>
-              <span class="menu-title">Tables</span>
+              <span class="menu-title">student Tables</span>
             </a>
           </li>
           <li class="nav-item">

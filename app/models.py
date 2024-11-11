@@ -48,6 +48,7 @@ class Enrollment(models.Model):
     student = models.ForeignKey(student_data, on_delete=models.CASCADE)
     class_assigned = models.ForeignKey(Class_room, on_delete=models.CASCADE)
     subject_assigned = models.ForeignKey(Subject, on_delete=models.CASCADE)
+    
 
     def __str__(self):
         return self.student
